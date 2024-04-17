@@ -1,0 +1,11 @@
+.card img{
+  height: 355px;
+  object-fit: cover;
+}
+main{
+  background-color: gray;
+}
+.color-info{
+  color: rgb(183, 37, 37);
+  background-color: rgba(0, 0, 0, 0.328);
+}

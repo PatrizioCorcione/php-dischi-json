@@ -3,7 +3,7 @@
 ## SVILUPPO
 
 - creazione della struttura HTML di base nel file index.php.
-- Importare Vue.js e Axios tramite CDN.
+- Importare Bootstrap,Vue.js e Axios tramite CDN.
 - Crea una sezione nell'HTML dove visualizzerai i dischi.
 - Implementare un metodo che utilizzerà Axios per effettuare una richiesta GET allo script PHP per ottenere i dati dei dischi.
 - Decodificare il contenuto JSON utilizzando json_decode() e quindi restituire i dati come risposta JSON.
