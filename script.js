@@ -5,7 +5,7 @@ createApp({
     return{
       apiUrl:'server.php',
       discs: [],
-      info:false
+      discSelected:{}
     }
   },
   methods: {
@@ -17,13 +17,12 @@ createApp({
           console.log('result.data');
         })
     },
+    selectedDisc(disc){
+      this.discSelected=disc;
+    }
   },
   mounted() {
     this.getApi();
   },
-  function(){
-    // selectedDisc(disc){
-      
-    // }
-  }
+  
 }).mount('#app')

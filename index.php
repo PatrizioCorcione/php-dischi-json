@@ -22,10 +22,10 @@
   <main>
     <div id="app" class="container">
       <div class="row">
-        <div v-for="disc in discs" :key="disc.id" @click="" class="col-4 my-3 ">
+        <div v-for="disc in discs" :key="disc.id" @click="selectedDisc(disc)" class="col-4 my-3 ">
           <div class="card text-bg-dark">
             <img :src="disc.cover" class="card-img" :alt=disc.title>
-            <div v-if="" class="card-img-overlay text-center d-flex flex-column-reverse color-info">
+            <div :class="{'info':discSelected===disc}" class="card-img-overlay text-center d-flex flex-column-reverse color-info">
               <h4 class="card-text">Anno: {{disc.year}}</h4>
               <h4 class="card-text">Genere: {{disc.genre}}</h4>
               <h2 class="card-title">{{disc.title}}</h2>
