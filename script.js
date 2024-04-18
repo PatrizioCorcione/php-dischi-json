@@ -6,7 +6,6 @@ createApp({
       apiUrl:'server.php',
       discs: [],
       discSelected:{},
-      indexDel:'',
       newDisc:{
         title:'',
         cover:'',
@@ -44,6 +43,14 @@ createApp({
     delDisc(index){
       const data = new FormData();
       data.append('discDel',index)
+      axios.post(this.apiUrl,data)
+      .then(result =>{
+        this.discs= result.data
+      })
+    },
+    addLike(index){
+      const data = new FormData();
+      data.append('likeIndex',index)
       axios.post(this.apiUrl,data)
       .then(result =>{
         this.discs= result.data

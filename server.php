@@ -2,7 +2,6 @@
 $jasonToString = file_get_contents('discs.json');
 $jasonToPhp = json_decode($jasonToString, true);
 
-// QUA VA LA LOGICA PHP
 if (isset($_POST['newTitle'])) {
   $newDisc = [
     'title' => $_POST['newTitle'],
@@ -16,6 +15,11 @@ if (isset($_POST['newTitle'])) {
 if (isset($_POST['discDel'])) {
   $indDiscDel = $_POST['discDel'];
   array_splice($jasonToPhp, $indDiscDel, 1);
+  file_put_contents('discs.json', json_encode($jasonToPhp));
+}
+if (isset($_POST['likeIndex'])) {
+  $likeIndex = $_POST['likeIndex'];
+  $jasonToPhp[$likeIndex]['like'] = !$jasonToPhp[$likeIndex]['like'];
   file_put_contents('discs.json', json_encode($jasonToPhp));
 }
 

@@ -11,6 +11,9 @@
   <!-- CDN VUE -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <!-- CDN VUE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' integrity='sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==' crossorigin='anonymous' />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +26,7 @@
   <div id="app">
     <header>
       <img src="./assets/img/logopngegg.png" alt="">
-      <h1>Musica da cani</h1>
+      <h1>BULL MUSIC</h1>
       <div>
         <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Aggiungi un disco</button>
       </div>
@@ -59,6 +62,8 @@
             <div class="card text-bg-dark position-relative ">
               <img :src="disc.cover" class="card-img" :alt=disc.title>
               <i @click.stop="delDisc(index)" class="fa-solid fa-delete-left position-absolute "></i>
+              <i v-if="disc.like" @click.stop="addLike(index)" class="fa-regular fa-heart"></i>
+              <i v-if="!disc.like" @click.stop="addLike(index)" class="fa-solid fa-heart"></i>
               <div :class="{'info': discSelected === disc}" class="card-img-overlay text-center d-flex flex-column-reverse color-info">
                 <h4 class="card-text">Anno: {{disc.year}}</h4>
                 <h4 class="card-text">Genere: {{disc.genre}}</h4>

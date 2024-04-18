@@ -15,7 +15,9 @@ header{
   border-radius: 25px;
 }
 h1{
-  color: rgb(162, 162, 162);
+  font-family: "Jacquard 24", system-ui;
+  color: rgb(0, 0, 0);
+  font-size: 6rem;
 }
 body{
   background-image: url('./assets/img/pngegg.png');
@@ -43,4 +45,8 @@ body{
   color: rgb(255, 0, 0);
   cursor: pointer;
   z-index: 9;
+}
+.fa-heart{
+  z-index: 10;
+  font-size: 1.7rem;
 }
