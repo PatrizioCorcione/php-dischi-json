@@ -30,6 +30,15 @@ createApp({
     addDisc(){
       const data = new FormData();
       data.append("newTitle",this.newDisc.title)
+      data.append("newCover",this.newDisc.cover)
+      data.append("newGenre",this.newDisc.genre)
+      data.append("newYear",this.newDisc.year)
+
+      axios.post(this.apiUrl,data)
+      .then(result =>{
+        this.discs= result.data
+        console.log(result.data);
+      })
     }
   },
   mounted() {
