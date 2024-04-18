@@ -32,7 +32,7 @@
       </div>
       <div class="offcanvas offcanvas-bottom text-bg-dark" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Inserisci le informazioni del disco</h5>
           <div data-bs-dismiss="offcanvas" @click='addDisc()' class="btn btn-danger mx-2  ">Invia</div>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -49,7 +49,7 @@
               <input v-model="newDisc.genre" class="input-canvas w-100 " type="text" placeholder="Genere">
             </div>
             <div class=" col-6">
-              <input v-model="newDisc.year" class="input-canvas w-100 " type="text" placeholder=Anno"">
+              <input v-model="newDisc.year" class="input-canvas w-100 " type="text" placeholder=Anno>
             </div>
           </div>
         </div>
@@ -62,9 +62,9 @@
             <div class="card text-bg-dark position-relative ">
               <img :src="disc.cover" class="card-img" :alt=disc.title>
               <i @click.stop="delDisc(index)" class="fa-solid fa-delete-left position-absolute "></i>
-              <i v-if="disc.like" @click.stop="addLike(index)" class="fa-regular fa-heart"></i>
-              <i v-if="!disc.like" @click.stop="addLike(index)" class="fa-solid fa-heart"></i>
-              <div :class="{'info': discSelected === disc}" class="card-img-overlay text-center d-flex flex-column-reverse color-info">
+              <i v-if="disc.like" @click.stop="addLike(index)" class="fa-regular fa-heart position-absolute bottom-0 m-2 text-danger "></i>
+              <i v-if="!disc.like" @click.stop="addLike(index)" class="fa-solid fa-heart position-absolute bottom-0  m-2 text-danger "></i>
+              <div :class="{'info': discSelected === disc}" class="card-img-overlay justify-content-center  text-center d-flex flex-column-reverse color-info">
                 <h4 class="card-text">Anno: {{disc.year}}</h4>
                 <h4 class="card-text">Genere: {{disc.genre}}</h4>
                 <h2 class="card-title">{{disc.title}}</h2>

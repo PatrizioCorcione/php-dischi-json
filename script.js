@@ -39,6 +39,13 @@ createApp({
         this.discs= result.data
         console.log(result.data);
       })
+
+      this.newDisc={
+        title:'',
+        cover:'',
+        genre:'',
+        year:''
+      }
     },
     delDisc(index){
       const data = new FormData();
