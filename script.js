@@ -5,7 +5,13 @@ createApp({
     return{
       apiUrl:'server.php',
       discs: [],
-      discSelected:{}
+      discSelected:{},
+      newDisc:{
+        title:'',
+        cover:'',
+        genre:'',
+        year:''
+      }
     }
   },
   methods: {
@@ -19,6 +25,11 @@ createApp({
     },
     selectedDisc(disc){
       this.discSelected=disc;
+      console.log(this.discSelected);
+    },
+    addDisc(){
+      const data = new FormData();
+      data.append("newTitle",this.newDisc.title)
     }
   },
   mounted() {
