@@ -11,7 +11,12 @@ if (isset($_POST['newTitle'])) {
     'year' => $_POST['newYear'],
   ];
   array_unshift($jasonToPhp, $newDisc);
-  file_put_contents('discs.json', (json_encode($jasonToPhp)));
+  file_put_contents('discs.json', json_encode($jasonToPhp));
+}
+if (isset($_POST['discDel'])) {
+  $indDiscDel = $_POST['discDel'];
+  array_splice($jasonToPhp, $indDiscDel, 1);
+  file_put_contents('discs.json', json_encode($jasonToPhp));
 }
 
 header('Content-Type: application/json');

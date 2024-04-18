@@ -6,6 +6,7 @@ createApp({
       apiUrl:'server.php',
       discs: [],
       discSelected:{},
+      indexDel:'',
       newDisc:{
         title:'',
         cover:'',
@@ -38,6 +39,14 @@ createApp({
       .then(result =>{
         this.discs= result.data
         console.log(result.data);
+      })
+    },
+    delDisc(index){
+      const data = new FormData();
+      data.append('discDel',index)
+      axios.post(this.apiUrl,data)
+      .then(result =>{
+        this.discs= result.data
       })
     }
   },

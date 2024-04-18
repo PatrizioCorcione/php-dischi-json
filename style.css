@@ -36,3 +36,11 @@ body{
   color: white;
   padding: 3px;
 }
+.fa-delete-left{
+  right: 15px;
+  top: 10px;
+  font-size: 1.7rem;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  z-index: 9;
+}
