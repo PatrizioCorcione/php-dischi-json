@@ -8,6 +8,7 @@ if (isset($_POST['newTitle'])) {
     'cover' => $_POST['newCover'],
     'genre' => $_POST['newGenre'],
     'year' => $_POST['newYear'],
+    'autor' => $_POST['newAutor'],
   ];
   array_unshift($jasonToPhp, $newDisc);
   file_put_contents('discs.json', json_encode($jasonToPhp));

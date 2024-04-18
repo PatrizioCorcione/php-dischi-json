@@ -10,7 +10,8 @@ createApp({
         title:'',
         cover:'',
         genre:'',
-        year:''
+        year:'',
+        autor:''
       }
     }
   },
@@ -33,6 +34,7 @@ createApp({
       data.append("newCover",this.newDisc.cover)
       data.append("newGenre",this.newDisc.genre)
       data.append("newYear",this.newDisc.year)
+      data.append("newAutor",this.newDisc.autor)
 
       axios.post(this.apiUrl,data)
       .then(result =>{
@@ -44,16 +46,20 @@ createApp({
         title:'',
         cover:'',
         genre:'',
-        year:''
+        year:'',
+        autor:''
       }
     },
     delDisc(index){
-      const data = new FormData();
-      data.append('discDel',index)
-      axios.post(this.apiUrl,data)
-      .then(result =>{
-        this.discs= result.data
-      })
+      if (confirm('Sicuro di voler rimuovere il disco dalla lista ?')) {
+        
+        const data = new FormData();
+        data.append('discDel',index)
+        axios.post(this.apiUrl,data)
+        .then(result =>{
+          this.discs= result.data
+        })
+      }
     },
     addLike(index){
       const data = new FormData();

@@ -1,1 +1,71 @@
-[{"id":1,"title":"The Sickness","like":false,"year":2000,"genre":"Nu Metal","cover":"https:\/\/i.pinimg.com\/564x\/5d\/6f\/23\/5d6f23c7128dbcf32f74738701e214d1.jpg"},{"id":2,"title":"Believe","like":true,"year":2002,"genre":"Alternative Metal","cover":"https:\/\/i0.wp.com\/www.wikimetal.com.br\/wp-content\/uploads\/2018\/08\/disturbed.jpg?w=696&ssl=1"},{"id":3,"title":"Ten Thousand Fists","like":false,"year":2005,"genre":"Alternative Metal","cover":"https:\/\/i.pinimg.com\/564x\/b8\/c0\/26\/b8c02656638dd13ce7cfb1e8dadc5570.jpg"},{"id":4,"title":"Indestructible","like":true,"year":2008,"genre":"Alternative Metal","cover":"https:\/\/i.pinimg.com\/564x\/fd\/6a\/fc\/fd6afcc71c0c356e157bec1dc5e8850c.jpg"},{"id":5,"title":"Asylum","like":false,"year":2010,"genre":"Alternative Metal","cover":"https:\/\/i.pinimg.com\/564x\/c3\/d2\/e4\/c3d2e4d7e6950c3bc41b275976e02045.jpg"},{"id":6,"title":"Immortalized","like":true,"year":2015,"genre":"Alternative Metal","cover":"https:\/\/i.pinimg.com\/564x\/a6\/bc\/8e\/a6bc8e8184468e34628fd0cda1141ef1.jpg"}]
+[
+  {
+    "title": "Mori no chiisana",
+    "cover": "https://i.scdn.co/image/ab67616d00001e0256835925b90d41a9ae26f429",
+    "genre": "Funny",
+    "year": "2024",
+    "autor": "Aoi Oneesa"
+  },
+  {
+    "title": "Maneskin",
+    "cover": "https://blog.ticketmaster.it/wp-content/uploads/2022/10/Maneskin-blog-738x415.png",
+    "genre": "rock",
+    "year": "2023",
+    "like": false,
+    "autor": "Maneskin"
+  },
+  {
+    "id": 1,
+    "title": "The Sickness",
+    "like": false,
+    "year": 2000,
+    "genre": "Nu Metal",
+    "cover": "https://i.pinimg.com/564x/5d/6f/23/5d6f23c7128dbcf32f74738701e214d1.jpg",
+    "autor": "Disturbed"
+  },
+  {
+    "id": 2,
+    "title": "Believe",
+    "like": true,
+    "year": 2002,
+    "genre": "Alternative Metal",
+    "cover": "https://i0.wp.com/www.wikimetal.com.br/wp-content/uploads/2018/08/disturbed.,jpg?w=696&ssl=1",
+    "autor": "Disturbed"
+  },
+  {
+    "id": 3,
+    "title": "Ten Thousand Fists",
+    "like": false,
+    "year": 2005,
+    "genre": "Alternative Metal",
+    "cover": "https://i.pinimg.com/564x/b8/c0/26/b8c02656638dd13ce7cfb1e8dadc5570.jpg",
+    "autor": "Disturbed"
+  },
+  {
+    "id": 4,
+    "title": "Indestructible",
+    "like": true,
+    "year": 2008,
+    "genre": "Alternative Metal",
+    "cover": "https://i.pinimg.com/564x/fd/6a/fc/fd6afcc71c0c356e157bec1dc5e8850c.jpg",
+    "autor": "Disturbed"
+  },
+  {
+    "id": 5,
+    "title": "Asylum",
+    "like": false,
+    "year": 2010,
+    "genre": "Alternative Metal",
+    "cover": "https://i.pinimg.com/564x/c3/d2/e4/c3d2e4d7e6950c3bc41b275976e02045.jpg",
+    "autor": "Disturbed"
+  },
+  {
+    "id": 6,
+    "title": "Immortalized",
+    "like": true,
+    "year": 2015,
+    "genre": "Alternative Metal",
+    "cover": "https://i.pinimg.com/564x/a6/bc/8e/a6bc8e8184468e34628fd0cda1141ef1.jpg",
+    "autor": "Disturbed"
+  }
+]

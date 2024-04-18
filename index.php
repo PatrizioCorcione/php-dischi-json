@@ -39,17 +39,20 @@
         <div class="offcanvas-body small">
 
           <div class="row">
-            <div class="col-6 my-3 ">
+            <div class="col-6">
               <input v-model="newDisc.title" class="input-canvas w-100 " type="text" placeholder="Titolo Campo Obbligatorio">
             </div>
-            <div class="col-6 my-3 ">
+            <div class="col-6">
               <input v-model="newDisc.cover" class="input-canvas w-100 " type="text" placeholder="Link Copertina">
             </div>
-            <div class=" col-6">
+            <div class=" col-4">
               <input v-model="newDisc.genre" class="input-canvas w-100 " type="text" placeholder="Genere">
             </div>
-            <div class=" col-6">
+            <div class=" col-4">
               <input v-model="newDisc.year" class="input-canvas w-100 " type="text" placeholder=Anno>
+            </div>
+            <div class=" col-4">
+              <input v-model="newDisc.autor" class="input-canvas w-100 " type="text" placeholder=Autore>
             </div>
           </div>
         </div>
@@ -67,6 +70,7 @@
               <div :class="{'info': discSelected === disc}" class="card-img-overlay justify-content-center  text-center d-flex flex-column-reverse color-info">
                 <h4 class="card-text">Anno: {{disc.year}}</h4>
                 <h4 class="card-text">Genere: {{disc.genre}}</h4>
+                <h4 class="card-text">Autore: {{disc.autor}}</h4>
                 <h2 class="card-title">{{disc.title}}</h2>
               </div>
             </div>
